@@ -1,0 +1,25 @@
+server:
+  port: 8097
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: edit-photo
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT-8
+  servlet:
+    multipart:
+      # 一次请求中所有上传文件总大小限制
+      max-request-size: 10MB
+      # 单个文件大小限制
+      max-file-size: 10MB
+
+
+
+
+
