@@ -59,6 +59,22 @@
             <version>3.141.59</version>
         </dependency>
 
+
+<!--        <dependency>-->
+<!--            <groupId>com.assertthat</groupId>-->
+<!--            <artifactId>selenium-shutterbug</artifactId>-->
+<!--            <version>1.5</version>-->
+<!--&lt;!&ndash;            <exclusions>&ndash;&gt;-->
+<!--&lt;!&ndash;                <exclusion>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <groupId>org.seleniumhq.selenium</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <artifactId>selenium-java</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                </exclusion>&ndash;&gt;-->
+<!--&lt;!&ndash;                <exclusion>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <groupId>commons-codec</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <artifactId>commons-codec</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                </exclusion>&ndash;&gt;-->
+<!--&lt;!&ndash;            </exclusions>&ndash;&gt;-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

@@ -35,6 +35,8 @@ public class DictController {
     private static final WebDriver driver;
 
     static {
+        System.setProperty("webdriver.gecko.driver","C:\\Program Files\\Mozilla Firefox\\geckodriver.exe");
+//        System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Mozilla Firefox\\geckodriver.exe");
         FirefoxBinary firefoxBinary = new FirefoxBinary();
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxBinary.addCommandLineOptions("--headless");
@@ -43,10 +45,12 @@ public class DictController {
     }
 
 
-    @RequestMapping("/testTEST")
+    @RequestMapping("/screenShotPhoto")
     public R testTEST(String htmlPath, String picturePath) {
         try {
             driver.get("file://" + htmlPath);
+//            Shutterbug.shootPage(driver, Capture.FULL, true).withName("FullImage").save(picturePath);
+
             driver.manage().window().setSize(new Dimension(272, 6000));
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); //执行屏幕截取
             FileUtil.copyFile(srcFile, new File(picturePath + System.currentTimeMillis() + ".png"), StandardCopyOption.REPLACE_EXISTING);
