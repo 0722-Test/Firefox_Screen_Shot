@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -33,6 +34,8 @@ public class DictController {
      *         </dependency>
      */
     private static final WebDriver driver;
+    @Autowired
+    private sdetesd sdetesd;
 
     static {
         System.setProperty("webdriver.gecko.driver","C:\\Program Files\\Mozilla Firefox\\geckodriver.exe");
@@ -56,6 +59,16 @@ public class DictController {
             FileUtil.copyFile(srcFile, new File(picturePath + System.currentTimeMillis() + ".png"), StandardCopyOption.REPLACE_EXISTING);
         } catch (Exception e) {
         }
+        return R.ok();
+    }
+
+
+    @RequestMapping("/testjselkrtjwe")
+    public R testljw() throws InterruptedException {
+
+        sdetesd.sdkfwje();
+
+        System.out.println("11111111111111111");
         return R.ok();
     }
 
